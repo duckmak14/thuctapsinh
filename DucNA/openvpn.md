@@ -1,6 +1,6 @@
 # Hướng dẫn openvpn trên linux 
 
-![](linux/images/screen_3.png)
+![](linux/images/screen_8.png)
 
 Để có thể cài đặt được openVPN thì ta cần có điều kiện sau 
 - Được cấp key để có thể truy cập được VPN 
