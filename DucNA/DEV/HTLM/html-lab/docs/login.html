@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Page Layout</title> 
+    <style> 
+        .head { 
+            font-size:40px; 
+            color:red; 
+            font-weight:bold; 
+        } 
+
+      
+        .menu {    
+            position: sticky; 
+            text-align: center; 
+            background-color:#000044; 
+            padding:5px 0px 5px 0px; 
+            color:white; 
+            margin: 0 auto; 
+            overflow: hidden; 
+        } 
+        .menu a { 
+            float: left; 
+            color: white; 
+            text-align: center; 
+            padding: 14px 16px; 
+            text-decoration: none; 
+            font-size: 20px; 
+        } 
+        .menu-log { 
+            right: auto; 
+            float: right; 
+        } 
+         
+    </style> 
+</head> 
+  
+<body> 
+
+    <!-- Header Shop -->
+    <header> 
+            <div class="head" align="center">Shop Quần Áo</div> 
+            
+    </header> 
+    <!-- Menu Shop -->
+    <div class="menu"> 
+        
+            <img src="/home/anhduc/Desktop/html/images/logo.png" width="60px" height="60px" align="left">
+            <a href="/home/anhduc/Desktop/html/docs/main.html">Trang chủ</a> 
+            <a href="#news">Sản phẩm</a> 
+            <a href="#intro">Giới thiệu</a>
+            <a href="#contact">Liên hệ</a>
+            <div class="menu-log"> 
+                <a href="#cart"><img src="/home/anhduc/Desktop/html/images/screen.png" title="Giỏ hàng" width="30px" height="30px" ></a> 
+                <a href="/home/anhduc/Desktop/html/docs/login.html">Đăng nhập</a> 
+                <a href="/home/anhduc/Desktop/html/docs/register.html">Đăng ký</a>
+            </div> 
+        </div> 
+
+    <!-- Login Shop -->
+    <form >
+        Username:<br>
+        <input type="text" name="user" >
+        <br>
+        Password:<br>
+        <input type="password" name="pass" >
+        <br><br>
+        <input type="submit" value="Submit">
+
+      </form> 
+
+</body> 
+</html>
