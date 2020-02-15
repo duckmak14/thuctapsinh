@@ -133,3 +133,22 @@ table {
 Nội dung của bảng 
 </div>
 ```
+- Để làm nổi bật được ô mà ta đang di chuột vào so với các ô bảng còn lại khác ta sử dụng `:hover`. 
+```
+tr:hover {background-color:red;}
+``` 
+Trong đó:
+    - `tr` : Là thẻ `<tr>` Chỉ  định hàng bên trong bảng 
+    - `:hover` : Là xác định làm nổi bật
+    - `background-color` : Là màu nổi bật sẽ hiển thị 
+    - Ta có thể thay thẻ `tr` bằng các thẻ khác  như `th` và `td`. Thường sẽ dùng để nổi bật cả hàng 
+
+- Ta có thể làm được kiểu sọc vằn cho các hàng trong thẻ. So le 2 màu cho mõi hàng trong bảng. Ta sử dụng `nth-child()` như các dùng của `:hover`. Nhưng `nth-child()` có hai giá trị là `even` và `odd` tương ứng với số đếm hàng chẵn và lẻ 
+```
+tr:nth-child(even) {background-color: red;}
+```
+trong đó:
+- `tr` là hàng có thể được thay bằng thẻ `th` và `td
+- `:nth-child(even)` là số hàng chẵn sẽ có màu
+- `background-color: red` : Có background màu đỏ
+
