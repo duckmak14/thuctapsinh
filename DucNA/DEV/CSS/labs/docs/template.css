@@ -1,0 +1,50 @@
+.menu-template{
+    background-color: #f1f1f1;
+    float: left;
+    width: 300px;
+    font-size: 15px;
+}
+
+.menu-template a{
+    display: block;
+    text-decoration: none;
+    padding: 8px 16px;
+    color: #000;
+}
+
+.menu-template a.active{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.menu-template a:hover:not(.active){
+    background-color: #555;
+    color: white;
+}
+
+.function{
+    float: right;
+    background-color: gray;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.function a{
+    display: block;
+    text-decoration: none;
+    padding: 8px 16px;
+    color: #000;
+}
+
+.image-template{
+    width: auto;
+    height: auto;
+}
+
+.menu-image{
+    width: 1000px;
+    margin: 0%;
+    padding: 0%;
+}
