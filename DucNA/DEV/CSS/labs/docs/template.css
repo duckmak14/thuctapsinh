@@ -38,6 +38,11 @@
     color: #000;
 }
 
+.function a:hover:not(.active){
+    background-color: #555;
+    color: white;
+}
+
 .image-template{
     width: auto;
     height: auto;
