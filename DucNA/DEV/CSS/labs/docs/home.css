@@ -103,6 +103,8 @@ li a:hover {
   background-color: gray;
   color: white;
   text-align: center;
+  display: block;
+
 }
 
 table {

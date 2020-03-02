@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="template.css">
+<link rel="stylesheet" href="xin-viec.css">
+
+</head>
+<body>
+
+<div>
+    <!-- header -->
+    <div class="header">
+        <p style="margin-top: 10px; padding:0;">Web Gửi mail</p>
+        
+    </div>
+
+    <!-- menu -->
+    <div class="container">
+    <div class="menu">
+        <ul>
+            <li><a href="/home/anhduc/thuctapsinh/DucNA/DEV/CSS/labs/docs/main.html">Home</a></li>
+            <li><a class="active" href="/home/anhduc/thuctapsinh/DucNA/DEV/CSS/labs/docs/template.html">Template</a></li>
+            <li><a href="/home/anhduc/thuctapsinh/DucNA/DEV/CSS/labs/docs/about.html">About</a></li>
+            <li><a class="login" href="/home/anhduc/thuctapsinh/DucNA/DEV/CSS/labs/docs/register.html">Register</a></li>
+            <li><a class="login" href="/home/anhduc/thuctapsinh/DucNA/DEV/CSS/labs/docs/login.html">Login</a></li>
+            
+          </ul>
+    </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <p>Thông liên lạc</p>
+        <table>
+          <tr>
+            <th>Họ tên</th>
+            <th>Số điện thoại</th>
+            <th>gmail</th>
+          </tr>
+          <tr>
+            <td>Nguyễn Anh Đức</td>
+            <td>0973161979</td>
+            <td>ducna241099@gmail.com</td>
+        </tr>
+        </table>
+      </div>
+    <!-- menu template -->
+    <div class="menu-template">
+        <a href="#Template1">Đơn xin việc</a>
+        <a href="#Template2">Tờ khai thông tin</a>
+        <a href="#Template3">Đơn xin nghỉ việc</a>
+        <a href="#Template3">Đơn xin tạm trú</a>
+    </div>
+
+     <!-- function template -->
+
+    <div class="function">
+      <a href="#add-template">Add Template</a>
+      <a href="#delete-template">Delete Template</a>
+      <a href="#edit-template">Edit Template</a>
+  </div>
+    <!--main content đơn xin việc -->
+    <div class="xinviecmain">
+        <!--img đơn xin việc -->
+        <div class="xinviec-head">
+            <div class="xinviec-img">
+                <div class="footer-img">
+                    <input type="file" id="file" name="file">
+
+                </div>
+
+            </div>
+            <div class="xinviec-headtext">
+                <input class="nametext" type="text" id="name" name="name" placeholder="Họ và tên" required>
+                <input class="job" type="text" id="job" name="job" placeholder="Vị trí ứng tuyển" required>
+
+                <div class="address">
+                    
+                    <input class="gioitinh" type="text" id="gioitinh" name="gioitinh" placeholder="giới tính" required>
+                    <input class="gmail" type="text" id="gmail" name="gmail" placeholder="ducna241099@gmail.com" required>
+                    <input class="phone" type="text" id="phone" name="phone" placeholder="0973161979" required>
+                    <input class="date-birth" type="text" id="date-birth" name="date-birth" placeholder="Sinh nhật" required>
+                    <input class="noi-o" type="text" id="noi-o" name="noi-o" placeholder="địa chỉ thường chú" required>    
+                </div>
+                <div class="desire">
+                    <h3 style="float: left">Mong muốn khi vào làm việc:</h3>
+                    <textarea name="message" rows="10" cols="90"></textarea>
+                </div>
+            </div>
+        </div>
+        <!-- body đơn xin việc -->
+            <!-- body học vấn đơn xin việc -->
+        <div class="education">
+            <div class="education-head">
+                <p>Học vấn </p>
+            </div>
+
+            <div class="education-text">
+                Trường đại học: <input class="university" type="text" id="university" name="university"  placeholder="KMA" required> 
+                <br>
+                Loại tốt nghiệp: <input class="degree" type="text" id="degree" name="degree"  placeholder="Loại bằng ra trường " required> 
+                <br>
+                Chuyên ngành : <input class="degree" type="text" id="degree" name="degree"  placeholder="Ngành học" required> 
+                <br>
+                Thời gian học : <input class="time" type="text" id="time" name="time"  placeholder="2016-2019" required> 
+                <br>
+            </div>
+        </div>
+        <!-- body Ngoại ngữ xin việc -->
+        <div class="education">
+            <div class="language">
+                <p>Ngoại Ngữ</p>
+            </div>
+            <div class="language-text">
+                    Nghe: <input class="language-input" type="range" id="university" name="university"  required> 
+                    <br>
+                    Nói : <input class="language-input" type="range" id="degree" name="degree"  required> 
+                    <br>
+                    Đọc : <input class="language-input" type="range" id="university" name="university"  required> 
+                    <br>
+                    Viết: <input class="language-input" type="range" id="degree" name="degree"  required> 
+                    <br>
+            </div>
+        </div>
+        <!-- body Kinh Nghiệm đơn xin việc -->
+        <div class="education">
+            <div class="experience">
+                <p>Kinh nghiệm</p>
+            </div>
+            <div class="experience-text">
+                    <h3>Mô tả công việc:</h3> 
+                    <textarea name="message" rows="10" cols="90" style="border: none"></textarea>
+                    <br>
+                    <h3>Thành tích đạt được:</h3> 
+                    <textarea name="message" rows="10" cols="90" style="border: none"></textarea> 
+                    <br>
+            </div>
+        </div>
+
+
+        <!-- body kỹ năng đơn xin việc -->
+        <div class="education">
+            <div class="skill">
+                <p>Kỹ năng</p>
+            </div>
+            <div class="skill-text">
+                    Kỹ năng chính: <input class="skill-input" type="text" id="skill" name="skill"  placeholder="Tư duy logic..." required> 
+                    <br>
+                    Kỹ năng mềm khác: <input class="skill-input2" type="text" id="soft-skills" name="soft-skills"  placeholder="Giao tiếp... " required> 
+                    <br>
+            </div>
+        </div>
+
+
+    </div>
+    
+
+</div>
+
+</body>
+</html>
