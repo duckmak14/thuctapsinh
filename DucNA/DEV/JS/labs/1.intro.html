@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function function123() {
+  document.getElementById("function").innerHTML = "Booommmm";
+}
+</script>
+</head>
+<body>
+
+<h2>Thay đổi dòng chữ</h2>
+
+<p id="demo">Nguyễn Anh Đức</p>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'Học tại KMA-CT2B'">Click Me!</button>
+
+<h2>Thay đổi ảnh </h2>
+
+<button onclick="document.getElementById('myImage').src='../images/screen.png'">Bật</button>
+
+<img id="myImage" src="../images/screen_25.png" style="width:100px; height:150px;">
+
+<button onclick="document.getElementById('myImage').src='../images/screen_25.png'">Tắt</button>
+
+<h2>Thay đổi HTML styles(CSS) </h2>
+
+<p id="styles">Nguyễn Anh Đức</p>
+
+<button type="button" onclick="document.getElementById('styles').style.fontSize='35px'">Click Me!</button>
+
+<h2>Thay đổi Ẩn HTML text  </h2>
+
+<p id="display">Nguyễn Anh Đức</p>
+
+<button type="button" onclick="document.getElementById('display').style.display='none'">Click Me!</button>
+
+<h2>Thay đổi hiển HTML text ẩn </h2>
+
+<p id="display1" style="display:none">Nguyễn Anh Đức</p>
+
+<button type="button" onclick="document.getElementById('display1').style.display='block'">Click Me!</button>
+
+<h2>Sử dụng hàm </h2>
+
+<p id="function">Nguyễn Anh Đức</p>
+
+<button type="button" onclick="function123()"> Click Me!</button>
+
+<h2>Sử dụng windows.alert hiển thị 5+6  </h2>
+
+<button type="button" onclick="window.alert(5 + 6)"> Click Me!</button>
+
+<h2>Sử dụng toán tử ||  </h2>
+<p id="test"></p>
+
+<script>
+var x = 10;
+var y = 5;
+
+document.getElementById("test").innerHTML = 
+(x == 5 || y == 5) + "<br>" + 
+(x == 10 || y == 0) + "<br>" + 
+(x == 10 || y == 3) + "<br>" + 
+(x == 6 || y == 3);
+
+</script>
+<h2>Sử dụng toán tử &&  </h2>
+<p id="test1"></p>
+
+<script>
+var x = 10;
+var y = 5;
+
+document.getElementById("test1").innerHTML = 
+(x == 10 && y == 5) + "<br>" + 
+(x == 10 && y == 0) + "<br>" + 
+(x == 10 && y == 3) + "<br>" + 
+(x == 6 && y == 3);
+</script>
+
+<h2>Sử dụng toán tử !  </h2>
+<p id="test2"></p>
+
+<script>
+var x = 10;
+var y = 5;
+
+document.getElementById("test2").innerHTML = 
+!(x = y ) + "<br>" + 
+!(x > y );
+</script>
+
+<h2>Sử dụng toán tử !  </h2>
+<p> Kết quả của việc cộng string với number </p>
+<p id="test3"></p>
+<p id="test4"></p>
+<p id="test5"></p>
+
+<script>
+var x = 10;
+var y = 5;
+var z = "test"; 
+
+document.getElementById("test3").innerHTML = x + y;
+
+document.getElementById("test4").innerHTML = x + y + z;
+
+document.getElementById("test5").innerHTML = z + x + y;
+</script>
+
+</body>
+</html>

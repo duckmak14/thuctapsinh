@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<h2> Tìm độ dài của chuỗi </h2>
+<p>test length text</p>
+<p id="length"></p>
+
+<script>
+var txt = "test length text";
+document.getElementById("length").innerHTML = txt.length;
+</script>
+
+<h2> Dấu \ </h2>
+<p id="test"></p>
+
+<script>
+var txt = "test \"text\"";
+document.getElementById("test").innerHTML = txt;
+</script>
+
+<h2> tìm ký tự đầu tiên </h2>
+<p id="txt"></p>
+
+<script>
+var txt = "123 txt 123";
+var a = txt.indexOf("txt");
+document.getElementById("txt").innerHTML = a;
+</script>
+
+<h2> thay the chuoi </h2>
+<p id="txt1"></p>
+
+<script>
+var txt = "123 txt 123 string1";
+var n = txt.replace("string1", "string2");
+document.getElementById("txt1").innerHTML = n;
+</script>
+
+<h2> thay thế tất cả trong chuỗi </h2>
+<p id="txt5"></p>
+
+<script>
+var txt = "123 txt 123 string1 string1 string1 string1";
+var n = txt.replace(/string1/g, "string2");
+document.getElementById("txt5").innerHTML = n;
+</script>
+
+<h2> In hoa </h2>
+<p id="txt2"></p>
+
+<script>
+var text1 = "123 txt 123 string1";
+var text2 = text1.toUpperCase();
+document.getElementById("txt2").innerHTML = text2;
+</script>
+
+<h2> viet thuong </h2>
+<p id="txt3"></p>
+
+<script>
+var text1 = "123 TXT 123 STRING";
+var text2 = text1.toLowerCase();
+document.getElementById("txt3").innerHTML = text2;
+</script>
+
+
+
+
+</body>
+</html> 

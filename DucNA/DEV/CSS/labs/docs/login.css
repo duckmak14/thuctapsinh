@@ -2,6 +2,7 @@
     background-color: gray;
     color: black;
     padding: 10px;
+    margin-bottom: 120px;
 }
 
 input[type=text], select {

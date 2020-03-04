@@ -1,9 +1,10 @@
 .xinviecmain{
 
-    width: 1300px;
-    margin: 5px;
-    margin-left: 310px;
+    width: 70%;
+    margin-top: 5px;
+    margin-left: 200px;
     padding: 0px;
+    
 }
 
 .xinviec-img{
@@ -25,8 +26,8 @@
 }
 
 .xinviec-headtext{
-    margin-left: 250px;
-    width: 800px;
+    margin-left: 210px;
+    width: 80%px;
 }
 
 .nametext {
@@ -132,7 +133,7 @@
 }
 
 .degree {
-    width: 300px;
+    width: 100%px;
     border: none;
     height: 20px;
     font-size: 15px;
@@ -228,4 +229,9 @@
     text-transform: uppercase;
     margin-left:20px; 
     margin-bottom: 10px;
+}
+
+.footer-img{
+    position: absolute;
+
 }
