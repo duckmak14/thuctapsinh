@@ -64,7 +64,238 @@ var text2 = text1.toLowerCase();
 document.getElementById("txt3").innerHTML = text2;
 </script>
 
+<h2> giá trị cuối cùng của mảng </h2>
+<p id="txt4"></p>
 
+<script>
+var text1 = ["value1", "value2", "value3", "value4"];
+var text2 = text1[text1.length-1];;
+document.getElementById("txt4").innerHTML = text2;
+</script>
+
+<h2> lấy phần nguyên của số </h2>
+<p id="txt6"></p>
+
+<script>
+var text1 = parseInt(10.66);
+document.getElementById("txt6").innerHTML = text1;
+</script>
+
+<h2> Thêm giá trị vào mảng</h2>
+
+<button onclick="myFunction()">Thêm giá trị value 5</button>
+
+<p id="txt7"></p>
+
+<script>
+var fruits = ["value1", "value2", "value3", "value4"];
+document.getElementById("txt7").innerHTML = fruits;
+
+function myFunction() {
+  fruits.push("value5");
+  document.getElementById("txt7").innerHTML = fruits;
+}
+</script>
+
+<h2>Kiểm tra xem có phải array không</h2>
+<p id="txt8"></p>
+
+<script>
+var test = ["value1", "value2", "value3", "value4"];
+document.getElementById("txt8").innerHTML = test instanceof Array;
+</script>
+
+<h2>Nối ký tự trang mảng</h2>
+<p id="txt9"></p>
+
+<script>
+var test = ["value1", "value2", "value3", "value4"];
+document.getElementById("txt9").innerHTML = test.join(" - ");
+</script>
+
+<h2> Thêm giá trị vào mảng mà trả lại tổng số giá trị trong mảng </h2>
+
+<button onclick="myFunction2()">Thêm giá trị value 5</button>
+
+<p id="txt10"></p>
+<p id="txt11"></p>
+
+<script>
+var hihi = ["value1", "value2", "value3", "value4"];
+document.getElementById("txt10").innerHTML = hihi;
+
+function myFunction2() {
+    document.getElementById("txt10").innerHTML = hihi.push("value5");
+  document.getElementById("txt11").innerHTML = hihi;
+}
+</script>
+
+<h2> Bớt giá trị trong mảng </h2>
+
+<button onclick="myFunction3()">Bớt giá trị cuối cùng </button>
+<p>giá trị ban đầu</p>
+<p id="txt12"></p>
+<p>Giá trị còn lại trong mảng</p>
+<p id="txt13"></p>
+<p> Giá trị bớt đi </p>
+<p id="txt14"></p>
+<script>
+var hihi1 = ["value1", "value2", "value3", "value4"];
+document.getElementById("txt12").innerHTML = hihi1;
+
+function myFunction3() {
+    document.getElementById("txt14").innerHTML = hihi1.pop("value5");
+  document.getElementById("txt13").innerHTML = hihi1;
+}
+</script>
+
+
+<h2> sử dụng splice() </h2>
+<button onclick="myFunction123()">click chuột</button>
+
+<p id="txt15"></p>
+<p id="txt16"></p>
+
+<script>
+var test20 = ["value1", "value2", "value3", "value4"];
+document.getElementById("txt15").innerHTML =   fruits;
+function myFunction123() {
+  test20.splice(2, 0, "value5", "value6");
+  document.getElementById("txt16").innerHTML =  test20;
+}
+</script>
+
+<h2> Kết nối mảng </h2>
+
+<p id="txt20"></p>
+<p id="txt21"></p>
+<p id="txt22"></p>
+
+<script>
+var array1 = ["value1", "value2", "value3", "value4"];
+var array2 = ["value5", "value6"];
+var array3 = array1.concat(array2);
+document.getElementById("txt20").innerHTML =   array1;
+
+document.getElementById("txt21").innerHTML =   array2;
+
+document.getElementById("txt22").innerHTML =   array3;
+
+</script>
+
+
+<h2> sắp xếp mảng theo thứ tự abc </h2>
+<button onclick="myFunction10()">sắp xếp thứ tự</button>
+
+<p id="txt23"></p>
+<p id="txt24"></p>
+
+<script>
+var test21 = ["a", "f", "d", "c"];
+document.getElementById("txt23").innerHTML =   test21;
+function myFunction10() {
+    test21.sort();
+  document.getElementById("txt24").innerHTML =  test21;
+}
+</script>
+
+<h2> Đảo ngược chuỗi </h2>
+<button onclick="myFunction11()">sắp xếp thứ tự</button>
+
+<p id="txt25"></p>
+<p id="txt26"></p>
+
+<script>
+var test22 = ["a", "f", "d", "c"];
+document.getElementById("txt25").innerHTML =   test22;
+function myFunction11() {
+    test22.reverse();
+  document.getElementById("txt26").innerHTML =  test22;
+}
+</script>
+
+<h2> Sắp xếp mảng số </h2>
+<button onclick="myFunction12()">sắp xếp thứ tự</button>
+
+<p id="txt27"></p>
+<p id="txt28"></p>
+
+<script>
+var test23 = [4, 20, 10 , 2];
+document.getElementById("txt27").innerHTML =   test23;
+function myFunction12() {
+    test23.sort(function(a, b){return a - b});
+  document.getElementById("txt28").innerHTML =  test23;
+}
+</script>
+
+<h2> Sắp xếp mảng số ngược từ lớn tới bé </h2>
+<button onclick="myFunction13()">sắp xếp thứ tự</button>
+
+<p id="txt29"></p>
+<p id="txt30"></p>
+
+<script>
+var test24 = [4, 20, 10 , 2];
+document.getElementById("txt29").innerHTML =   test24;
+function myFunction13() {
+    test24.sort(function(a, b){return b - a});
+  document.getElementById("txt30").innerHTML =  test24;
+}
+</script>
+
+<h2> Sắp xếp mảng object </h2>
+
+<button onclick="myFunction15()">sắp xếp thứ tự</button>
+
+<p id="txt31"></p>
+
+<p id="txt32"></p>
+
+<script>
+var nameten = [
+    {Tên : "DUC", sn: 1999 },
+    {Tên : "Huyen", sn: 1998 },
+    {Tên : "Binh", sn: 1990 }
+    ];
+
+    document.getElementById("txt31").innerHTML =  
+  nameten[0].Tên + " " + nameten[0].sn + "<br>" + 
+  nameten[1].Tên + " " + nameten[1].sn + "<br>" +
+  nameten[2].Tên + " " + nameten[2].sn;
+
+
+function myFunction15(){
+    nameten.sort(function(a,b){
+        return a.Tên.localeCompare(b.Tên)
+    }); 
+    display_array();
+}
+
+function display_array() {
+  document.getElementById("txt32").innerHTML =  
+  nameten[0].Tên + " " + nameten[0].sn + "<br>" + 
+  nameten[1].Tên + " " + nameten[1].sn + "<br>" +
+  nameten[2].Tên + " " + nameten[2].sn;
+}
+</script>
+
+<h2> Sử dụng filter tạo mảng mới  </h2>
+<p>mảng cũ</p>
+<p>45, 4, 9, 16, 25</p>
+<p>mảng mới</p>
+<p id="demo1234"></p>
+
+<script>
+var numbers = [45, 4, 9, 16, 25];
+var new1 = numbers.filter(myFunction);
+
+document.getElementById("demo1234").innerHTML = new1 ;
+
+function myFunction(value) {
+  return value > 18;
+}
+</script>
 
 
 </body>
