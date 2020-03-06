@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>ISO Dates</h2>
+
+<p id="demo"></p>
+
+<script>
+var d = new Date("2015");
+document.getElementById("demo").innerHTML = d;
+</script>
+
+<h2>MILISECONDS của ngày hôm nay</h2>
+
+<p id="demo1"></p>
+
+<script>
+var d = new Date();
+var a = Date.parse(d)
+document.getElementById("demo1").innerHTML = a;
+</script>
+
+<h2>thứ trong tuần</h2>
+<p id="demo2"></p>
+
+<script>
+var d = new Date();
+var days = ["Chủ nhật","Thứ 2","Thứ 3","Thứ 4","Thứ 5","Thứ 6","Thứ 7"];
+document.getElementById("demo2").innerHTML = days[d.getDay()] ;
+</script>
+
+<h2>Năm của hôm nay theo UTC(Universal Time Coordinated)</h2>
+
+<p id="demo3"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo3").innerHTML = d.getUTCFullYear()	 ;
+</script>
+
+<h2>Cài đặt lại giá trị năm</h2>
+
+<p id="demo4"></p>
+
+<script>
+var d = new Date();
+d.setFullYear(2021);
+document.getElementById("demo4").innerHTML = d.getUTCFullYear()	 ;
+</script>
+
+
+<h2>Cài đặt lại giá trị năm</h2>
+
+<p id="demo5"></p>
+
+<script>
+var d = new Date();
+d.setFullYear(2020, 3, 8);
+document.write(d);
+</script>
+
+<h2>Cài đặt theo kiểu ISO</h2>  
+
+<script>
+var d = new Date();
+var a = d.toISOString() ;
+document.write(a);
+</script>
+
+
+<h2>Số PI</h2>  
+
+<script>
+var d = Math.PI;
+document.write(d);
+</script>
+
+<h2>Làm tròn đến số nguyên </h2>  
+
+<script>
+var d = Math.round( 4.4 * 3.5 );
+document.write(d);
+</script>
+
+<h2>Lũy thừa với Math.pow </h2>  
+
+<script>
+var d = Math.pow(2, 4);
+document.write(d);
+</script>
+
+<h2>Căn bật 2 của số  </h2>  
+
+<script>
+var d = Math.sqrt(9);
+document.write(d);
+</script>
+
+<h2>Giá trị tuyệt đối của số đó </h2>  
+
+<script>
+var d = abs(-9);
+document.write(d);
+</script>
+
+<h2>Làm tròn lên  </h2>  
+
+<script>
+var d = Math.ceil(4.2);
+document.write(d);
+</script>
+
+<h2>Làm tròn xuống </h2>  
+
+<script>
+var d = Math.floor(4.2);
+document.write(d);
+</script>
+
+<h2>Tính theo hàm sin </h2>  
+
+<script>
+var d = Math.sin(90 * Math.PI / 180);
+document.write(d);
+</script>
+
+<h2>Tính max min trong dãy </h2>  
+<p id = min> </p>
+
+<p id = max> </p>
+
+<script>
+var max_number = Math.max(0, 150, 30, 20, -8, -200);
+var min_number = Math.min(0, 150, 30, 20, -8, -200);
+
+document.getElementById("max").innerHTML = max_number;
+
+document.getElementById("min").innerHTML = min_number;
+
+</script>
+
+<h2>Sử dụng giá trị boolen</h2>  
+<p> so sánh 10 > 9  </p>
+
+<p id=demo7> </p>
+
+<button onclick="myFunction123()">click</button>
+
+<script>
+
+function myFunction123() {
+  document.getElementById("demo7").innerHTML = Boolean(10 > 9);
+}
+</script>
+
+<h2>Tìm kiếm kiểu dữ liệu date</h2>
+<p id=demo8> </p>
+
+<script>
+var date = new Date();
+document.getElementById("demo8").innerHTML = isDate(date);  
+function isDate(myDate) {
+    return myDate.constructor === Date;
+}
+</script>
+
+<h2>Tìm kiếm kiểu dữ liệu array</h2>
+<p id=demo9> </p>
+<button onclick="isArray(fruits)">click</button>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+  
+function isArray(myArray) {
+  
+  document.getElementById("demo9").innerHTML = (myArray.constructor === Array) ;  
+}
+</script>
+
+</body>
+</html>
